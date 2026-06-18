@@ -1,0 +1,132 @@
+[
+  {
+    "id": "USR-001",
+    "full_name": "Alice Chen",
+    "age": "29",
+    "email": "alice.chen@example.com",
+    "sensor_data": {
+      "temperature": 72.3,
+      "humidity": null,
+      "pressure": 1012.5
+    },
+    "tags": [
+      "active",
+      "vip"
+    ],
+    "department": "Engineering",
+    "salary": "$95,000",
+    "created": "2024-01-15",
+    "last_login": "2024-03-10T14:32:00Z",
+    "is_active": "true"
+  },
+  {
+    "id": "USR-001",
+    "full_name": "Alice Chen",
+    "age": 29,
+    "email": "alice.chen@example.com",
+    "sensor_data": {
+      "temperature": 72.3,
+      "humidity": 45.1,
+      "pressure": 1012.5
+    },
+    "tags": "active",
+    "department": "Engineering",
+    "salary": "$95,000",
+    "created": "01/15/2024",
+    "last_login": "2024-03-10T14:32:00Z",
+    "is_active": true
+  },
+  {
+    "id": "USR-002",
+    "full_name": "Bob Martinez",
+    "age": 34,
+    "email": "bob.martinez@example.com",
+    "sensor_data": {
+      "temperature": 68.1,
+      "humidity": 55.0,
+      "pressure": null
+    },
+    "tags": [
+      "active",
+      "manager"
+    ],
+    "department": "Sales",
+    "salary": "82500",
+    "created": "2023-11-20",
+    "last_login": "2024-03-11T09:15:00Z",
+    "is_active": true
+  },
+  {
+    "id": "USR-003",
+    "full_name": null,
+    "age": -5,
+    "email": "not-an-email",
+    "sensor_data": {},
+    "tags": [],
+    "department": null,
+    "salary": null,
+    "created": null,
+    "last_login": null,
+    "is_active": null
+  },
+  {
+    "id": "USR-004",
+    "full_name": "Diana Patel",
+    "age": 41,
+    "email": "diana.patel@example.com",
+    "sensor_data": {
+      "temperature": 70.5,
+      "humidity": 48.3,
+      "pressure": 1015.2
+    },
+    "tags": [
+      "active",
+      "lead",
+      "remote"
+    ],
+    "department": "Data Science",
+    "salary": 110000,
+    "created": "2022-06-01",
+    "last_login": "2024-03-12T11:00:00Z",
+    "is_active": true
+  },
+  {
+    "id": "USR-005",
+    "full_name": "Ethan Brooks",
+    "age": "UNKNOWN",
+    "email": "ethan@example.com",
+    "sensor_data": {
+      "temperature": null,
+      "humidity": 60.2,
+      "pressure": 1008.1
+    },
+    "tags": [
+      "inactive"
+    ],
+    "department": "HR",
+    "salary": "$72,000",
+    "created": "03-22-2023",
+    "last_login": null,
+    "is_active": "false"
+  },
+  {
+    "id": "USR-006",
+    "full_name": "Fiona Kim",
+    "age": 27,
+    "email": "fiona.kim@example.com",
+    "sensor_data": {
+      "temperature": 69.8,
+      "humidity": 52.0,
+      "pressure": 1011.3
+    },
+    "tags": [
+      "active",
+      "intern"
+    ],
+    "department": "Design",
+    "salary": 58000,
+    "created": "2024-02-01",
+    "last_login": "2024-03-09T08:45:00Z",
+    "is_active": true
+  }
+]

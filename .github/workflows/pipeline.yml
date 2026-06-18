@@ -1,0 +1,40 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: |
+          python pipeline/01_clean.py
+          python pipeline/02_validate.py
+          python pipeline/03_store.py
+        env:
+          DATABASE_URL: sqlite:///db/pipeline.db
+
+      - name: Test API starts and responds
+        run: |
+          uvicorn api.main:app &
+          sleep 3
+          curl -f http://localhost:8000/health
+        env:
+          API_KEYS: test-key-12345
+          DATABASE_URL: sqlite:///db/pipeline.db

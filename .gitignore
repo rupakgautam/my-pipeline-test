@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Database — never commit real data
+db/
+*.db
+*.sqlite3
+
+# Secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+
+# Pipeline output — generated files
+data/cleaned/
+data/validated/
+data/invalid/
+logs/
+
+# OS
+.DS_Store
+.vscode/settings.json
