@@ -275,6 +275,23 @@ def to_out(u: DBUser) -> UserOut:
 # All routes below use /api/v1/ prefix — URI versioning from slide 4.
 
 # ── PUBLIC endpoint — no auth ─────────────────────────────────────────────────
+@app.get("/", tags=["Health"])
+def root():
+    """Welcome message at the API root."""
+    return {"message": "Welcome to the Data Pipeline API", "docs": "/docs"}
+
+
+@app.get("/health", tags=["Health"])
+def health():
+    """
+    Public health check — no API key required.
+    Use this to check if the server is up without needing credentials.
+    """
+    return {
+        "status": "ok",
+        "time": datetime.utcnow().isoformat(),
+        "version": "v1"
+    }
 @app.get("/health", tags=["Health"])
 def health():
     """
